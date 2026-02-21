@@ -1,3 +1,4 @@
+import Link from "next/link";
 import WaitlistForm from "./WaitlistForm";
 
 interface HeroSectionProps {
@@ -41,12 +42,12 @@ export default function HeroSection({
             )}
           </div>
         ) : (
-          <a
+          <Link
             href="/#waitlist"
             className="inline-block bg-green-400 text-black font-semibold px-8 py-4 rounded-xl hover:bg-green-300 transition-colors"
           >
             {ctaText}
-          </a>
+          </Link>
         )}
       </div>
     </section>

@@ -11,7 +11,7 @@
 
 ## Tech Stack
 
-- [Next.js 14](https://nextjs.org/) (App Router)
+- [Next.js 15](https://nextjs.org/) (App Router)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote) (blog posts)
