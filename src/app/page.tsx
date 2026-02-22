@@ -47,7 +47,7 @@ const faqItems = [
 
 export default function HomePage() {
   return (
-    <div style={{ backgroundColor: "#0a1a0f" }}>
+    <div className="bg-[var(--background)]">
       <HeroSection
         headline="Minder wrijving. Meer intentie."
         subheadline="No Effort verwijdert de frictie tussen jouw geld, gewoonten en groei. Geen silo's. Één rustige plek."
