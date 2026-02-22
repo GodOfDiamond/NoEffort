@@ -30,7 +30,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getPost(slug);
-  if (!post) notFound();
+  if (!post) {
+    return (
+      <div style={{ backgroundColor: "#0a1a0f" }} className="pt-24 pb-20 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="text-white/30 text-sm mb-3">404</div>
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Artikel niet gevonden
+          </h1>
+          <p className="text-white/60 max-w-xl mx-auto">
+            De pagina die je zoekt bestaat niet (meer), of de link is onjuist.
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ backgroundColor: "#0a1a0f" }} className="pt-24 pb-20 px-6">
