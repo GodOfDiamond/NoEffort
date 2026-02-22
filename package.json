@@ -18,6 +18,14 @@
   "overrides": {
     "minimatch": "^10.2.2"
   },
+  "resolutions": {
+    "minimatch": "^10.2.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch": "^10.2.2"
+    }
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
