@@ -24,12 +24,17 @@ export default function FAQAccordion({ items, title = "Veelgestelde vragen" }: F
               <button
                 className="w-full text-left px-6 py-4 flex justify-between items-center text-white font-medium hover:bg-white/5 transition-colors"
                 onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
+                aria-controls={`faq-panel-${i}`}
               >
                 <span>{item.question}</span>
                 <span className="text-white/50 text-lg">{open === i ? "−" : "+"}</span>
               </button>
               {open === i && (
-                <div className="px-6 pb-4 text-white/60 text-sm leading-relaxed">
+                <div
+                  id={`faq-panel-${i}`}
+                  className="px-6 pb-4 text-white/60 text-sm leading-relaxed"
+                >
                   {item.answer}
                 </div>
               )}
