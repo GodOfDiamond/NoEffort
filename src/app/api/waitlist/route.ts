@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     }
 
     // TODO: Store email in database (e.g., DynamoDB, Supabase, or other storage)
-    console.log(`[Waitlist] New signup: ${email}`);
+    console.log("[Waitlist] New signup received");
 
     return NextResponse.json({
       success: true,
