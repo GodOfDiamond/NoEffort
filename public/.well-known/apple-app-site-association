@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "XDJHPKT5KP.Owusu.lifestyle",
+        "paths": ["/auth/*", "/auth/callback"]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["XDJHPKT5KP.Owusu.lifestyle"]
+  }
+}
